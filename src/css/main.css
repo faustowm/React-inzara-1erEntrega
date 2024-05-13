@@ -8,9 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #EECDA3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EF629F, #EECDA3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EF629F, #EECDA3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #616161;
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+    background: linear-gradient(to right, #9bc5c3, #616161);
+
+    
     padding: 1rem;
     
 }
@@ -32,3 +34,57 @@
     display: grid;
     place-items: center;
 }
+
+/*Main*/
+
+.warm-background {
+    background: #D3D3D3;
+
+  }
+  
+
+/*Footer*/
+.footer {
+    background: #616161;
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+    background: linear-gradient(to right, #9bc5c3, #616161);
+    padding: 20px 0;
+    text-align: center;
+    
+}
+
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+a:hover,
+a:active,
+a:focus,
+a:visited {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+.redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes-sociales img {
+    width: 40px; 
+}
+
+.frase {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 24px; 
+    color: #555; 
+}
+
+.destacado {
+    font-weight: bold; 
+    color: hsla(312, 100%, 50%, 0.445); 
+}
+
+  
