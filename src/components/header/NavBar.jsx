@@ -6,9 +6,8 @@ export const NavBar = () => {
     <nav className='nav'>
       <ul className='nav-menu'>
       <li ><a className='nav-link' href='#'>Home</a></li>
-      <li ><a className='nav-link' href='#'>Carameleras</a></li>
-      <li ><a className='nav-link' href='#'>Bandejas</a></li>
-      <li ><a className='nav-link' href='#'>Premium</a></li>
+      <li ><a className='nav-link' href='#'>Productos</a></li>
+      <li ><a className='nav-link' href='#'>Contacto</a></li>
       </ul>
   </nav>
   )
