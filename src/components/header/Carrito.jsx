@@ -1,9 +1,10 @@
 import { BsCartCheck } from "react-icons/bs"
 
-export const Carrito = () => {
+export const Carrito = (props) => {
+  
   return (
     <div className="carrito">
-    <BsCartCheck/> 1
+    <BsCartCheck/> {props.numerito}
     </div>
   )
 }
