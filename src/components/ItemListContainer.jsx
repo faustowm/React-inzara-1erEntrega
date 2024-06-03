@@ -20,7 +20,8 @@ export const ItemListContainer = () => {
 
   useEffect(() => {
     
-    pedirProductos().then((res) => {
+    pedirProductos()
+        .then((res) => {
         if (!categoryId) {
           setTitulo("Productos");
           setProductos(res);

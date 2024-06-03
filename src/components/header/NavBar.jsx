@@ -8,7 +8,7 @@ export const NavBar = () => {
     <nav className="nav">
         <ul className="nav-menu">
             <li className="nav-item">
-              <NavLink to="/" activeclassname="active" className="nav-link">Inicio</NavLink>
+              <NavLink to="/" activeclassname="active" className="nav-link">INICIO</NavLink>
             </li>
             {
               categories.map((category) => {

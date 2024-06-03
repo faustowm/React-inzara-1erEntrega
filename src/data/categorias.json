@@ -1,14 +1,14 @@
 [
     {
         "id": "decorativa",
-        "nombre": "Decorativa"
+        "nombre": "DECORATIVA"
     },
     {
         "id": "bandeja",
-        "nombre": "Bandeja"
+        "nombre": "BANDEJA"
     },
     {
         "id": "caramelera",
-        "nombre": "Caramelera"
+        "nombre": "CARAMELERA"
     }
 ]

@@ -9,7 +9,7 @@ export const Header = (props) => {
   
   return (
     <header className="header">
-        <Link to="/"><h1>InzaraAromas</h1></Link>
+        <Link to="/"><h1>INZARA AROMAS</h1></Link>
         <NavBar />
         <Carrito numerito={props.numerito} />
     </header>

@@ -2,11 +2,10 @@ import { ItemListContainer } from "./components/ItemListContainer"
 import ItemDetailContainer from "./components/ItemDetailContainer"
 import { Header } from "./components/header/Header"
 import { Footer } from "./components/Footer"
-import 'bootstrap/dist/css/bootstrap.min.css'
-import "./css/main.css"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { useState } from "react";
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import "./css/main.css"
 
 function App() {
 
