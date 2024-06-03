@@ -11,8 +11,6 @@
     background: #616161;
     background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
     background: linear-gradient(to right, #9bc5c3, #616161);
-
-    
     padding: 1rem;
     
 }
@@ -29,19 +27,32 @@
     color: black
 }
 
-.productos-conteiner{
-    min-height: 50vh;
+.products-container {
+    min-height: 30vh;
     display: grid;
     place-items: center;
 }
 
-/*Main*/
+.oscuro {
+    background-color: black !important;
+}
 
-.warm-background {
-    background: #D3D3D3;
+.item-list-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-  }
-  
+.productos-grilla {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.producto {
+    background-color: pink;
+    border-radius: .5rem;
+    padding: 1rem;
+}
 
 /*Footer*/
 .footer {

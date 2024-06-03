@@ -1,5 +1,5 @@
 import { ItemListContainer } from "./components/ItemListContainer"
-import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer"
 import { Header } from "./components/header/Header"
 import { Footer } from "./components/Footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
@@ -12,7 +12,7 @@ function App() {
 
   const [numerito, setNumerito] = useState(1);
 
-  
+
   return (
     
       <BrowserRouter>

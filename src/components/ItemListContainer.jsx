@@ -8,21 +8,19 @@ export const ItemListContainer = () => {
 
   let { categoryId } = useParams();
   let [productos, setProductos] = useState([]);
-
   let [titulo, setTitulo] = useState("Productos");
   
   const pedirProductos = () => {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
-        resolve(data);
+        resolve(data); 
       }, 1000);
     })
   }
 
   useEffect(() => {
     
-    pedirProductos()
-      .then((res) => {
+    pedirProductos().then((res) => {
         if (!categoryId) {
           setTitulo("Productos");
           setProductos(res);
