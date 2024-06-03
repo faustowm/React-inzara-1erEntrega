@@ -29,8 +29,9 @@
 
 .products-container {
     min-height: 30vh;
-    display: grid;
-    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .oscuro {
@@ -39,19 +40,38 @@
 
 .item-list-container {
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .productos-grilla {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); 
     gap: 1rem;
+    justify-items: center; 
+    width: 100%;
 }
 
 .producto {
-    background-color: pink;
+    background: #616161;
+    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+    background: linear-gradient(to right, #9bc5c3, #616161);
     border-radius: .5rem;
     padding: 1rem;
+    width: 100%; 
+    max-width: 300px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    max-width: 200px; 
+    margin-bottom: 1rem;
+    border-radius: .5rem;
 }
 
 /*Footer*/

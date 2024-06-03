@@ -1,40 +1,40 @@
 [
     {
         "id": 1,
-        "nombre": "Vela-decorativa",
+        "nombre": "DECORATIVA",
         "precio": 3000,
         "imagen": "./src/assets/img/Velas1.jpeg",
         "descripcion": "Las velas decorativas embellecen espacios con sus diversas formas, colores y fragancias, creando ambientes acogedores y elegantes.",
         "categoria": {
-            "id": "vela",
-            "nombre": "Vela"
+            "id": "decorativa",
+            "nombre": "Decorativa"
         }
     },
     {
         "id": 2,
-        "nombre": "Vela-decorativa",
+        "nombre": "DECORATIVA",
         "precio": 3000,
         "imagen": "./src/assets/img/Velas2.jpeg",
         "descripcion": "Las velas decorativas embellecen espacios con sus diversas formas, colores y fragancias, creando ambientes acogedores y elegantes.",
         "categoria": {
-            "id": "vela",
-            "nombre": "Vela"
+            "id": "decorativa",
+            "nombre": "Decorativa"
         }
     },
     {
         "id": 3,
-        "nombre": "Vela-decorativa",
+        "nombre": "DECORATIVA",
         "precio": 3000,
         "imagen": "./src/assets/img/Velas3.jpeg",
         "descripcion": "Las velas decorativas embellecen espacios con sus diversas formas, colores y fragancias, creando ambientes acogedores y elegantes.",
         "categoria": {
-            "id": "vela",
-            "nombre": "Vela"
+            "id": "decorativa",
+            "nombre": "Decorativa"
         }
     },
     {
         "id": 4,
-        "nombre": "Vela-bandeja",
+        "nombre": "BANDEJA",
         "precio": 4500,
         "imagen": "./src/assets/img/bandeja1.jpg",
         "descripcion": "Las velas en bandejas decoran espacios con estilo, combinando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
@@ -45,7 +45,7 @@
     },
     {
         "id": 5,
-        "nombre": "Vela-bandeja",
+        "nombre": "BANDEJA",
         "precio": 4500,
         "imagen": "./src/assets/img/bandeja2.jpg",
         "descripcion": "Las velas en bandejas decoran espacios con estilo, combinando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
@@ -56,7 +56,7 @@
     },
     {
         "id": 6,
-        "nombre": "Vela-bandeja",
+        "nombre": "BANDEJA",
         "precio": 4500,
         "imagen": "./src/assets/img/bandeja3.jpg",
         "descripcion": "Las velas en bandejas decoran espacios con estilo, combinando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
@@ -67,7 +67,7 @@
     },
     {
         "id": 7,
-        "nombre": "Vela-caramelera",
+        "nombre": "CARAMELERA",
         "precio": 6000,
         "imagen": "./src/assets/img/caramelera1.jpg",
         "descripcion": "Las velas en carameleras decoran espacios con estilo, aportando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
@@ -78,7 +78,7 @@
     },
     {
         "id": 8,
-        "nombre": "Vela-caramelera",
+        "nombre": "CARAMELERA",
         "precio": 6000,
         "imagen": "./src/assets/img/caramelera2.jpg",
         "descripcion": "Las velas en carameleras decoran espacios con estilo, aportando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
@@ -89,7 +89,7 @@
     },
     {
         "id": 9,
-        "nombre": "Vela-caramelera",
+        "nombre": "CARAMELERA",
         "precio": 6000,
         "imagen": "./src/assets/img/caramelera3.jpg",
         "descripcion": "Las velas en carameleras decoran espacios con estilo, aportando diversas formas, colores y fragancias para crear ambientes acogedores y elegantes.",
