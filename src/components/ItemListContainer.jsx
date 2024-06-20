@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import data from "../data/productos.json";
-import categories from "../data/categorias.json";
 import { ItemList } from './ItemList';
 import { useParams } from 'react-router-dom';
+import { collection, doc, getDocs } from "firebase/firestore";
+import { db } from "../firebase/config";
 
 export const ItemListContainer = () => {
 
@@ -10,27 +10,18 @@ export const ItemListContainer = () => {
   let [productos, setProductos] = useState([]);
   let [titulo, setTitulo] = useState("Productos");
   
-  const pedirProductos = () => {
-    return new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve(data); 
-      }, 1000);
-    })
-  }
-
   useEffect(() => {
-    
-    pedirProductos()
-        .then((res) => {
-        if (!categoryId) {
-          setTitulo("Productos");
-          setProductos(res);
-        } else {
-          setTitulo(categories.find((cat) => cat.id === categoryId).nombre);
-          setProductos(res.filter((prod) => prod.categoria.id === categoryId));
-        }
+    const productosRef = collection(db, "productos");
+
+    getDocs(productosRef)
+      .then((res) => {
+        const fetchedProducts = res.docs.map((doc) => ({
+          ...doc.data(),
+          id: doc.id
+        }));
+        setProductos(fetchedProducts);
       })
-      
+     
   }, [categoryId]);
   
 

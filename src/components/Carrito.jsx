@@ -7,7 +7,7 @@ export const Carrito = () => {
 
   return (
     <div>
-      {carrito.map((prod) => <h1>{prod.nombre}: ${prod.precio}: {prod.descripcion}</h1>)}
+      {carrito.map((prod) => <h1 key={prod.id}>{prod.nombre}: ${prod.precio}: {prod.descripcion}</h1>)}
       {
         carrito.length > 0 ?
         <>
