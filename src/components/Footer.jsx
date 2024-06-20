@@ -3,13 +3,13 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer class="footer">
-    <div class="redes-sociales">
-        <a href="http://wa.me/3426300020" class="redes-item"><i class="bi bi-whatsapp"> 3426300020</i></a>
-        <p class="redes-item"><i class="bi bi-envelope"></i><a href="mailto:inzaraaromas@gmail.com">inzaraaromas@gmail.com</a></p>
-        <p class="redes-item"><i class="bi bi-geo-alt"> Agustin delgado 3879</i></p>
-    </div>
-    <p class="frase">¡<span class="destacado">Enciende tus sentidos</span> con Inzara Aromas!</p>
-</footer>
+    <footer className="footer">
+      <div className="redes-sociales">
+        <a href="http://wa.me/3426300020" className="redes-item"><i className="bi bi-whatsapp"> 3426300020</i></a>
+        <p className="redes-item"><i className="bi bi-envelope"></i><a href="mailto:inzaraaromas@gmail.com">inzaraaromas@gmail.com</a></p>
+        <p className="redes-item"><i className="bi bi-geo-alt"> Agustin delgado 3879</i></p>
+      </div>
+      <p className="frase">¡<span className="destacado">Enciende tus sentidos</span> con Inzara Aromas!</p>
+    </footer>
   )
 }
