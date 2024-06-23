@@ -10,6 +10,9 @@ import { Carrito } from "./components/Carrito"
 import { NotFound } from "./components/NotFound"
 import { CartProvider } from "./context/CartContext";
 import { Suma } from "./components/Suma"
+import { Checkout } from "./components/Checkout"
+
+
 
 function App() {
 
@@ -23,6 +26,7 @@ function App() {
           <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
           <Route path="/carrito" element={<Carrito />}/>
           <Route path="/suma" element={<Suma />}/>
+          <Route path="/finalizar-compra" element={<Checkout/>}/>
           <Route path="/*" element={<NotFound />}/>
         </Routes>
         <Footer />

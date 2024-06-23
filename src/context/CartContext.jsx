@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 
 export const CartContext = createContext();
@@ -16,15 +16,32 @@ export const CartProvider = ({ children }) => {
   }
 
   const calcularTotal = () => {
-    return carrito.reduce((acc, prod) => acc + prod.precio, 0);
+    return carrito.reduce((acc, prod) => acc + (prod.precio * prod.cantidad), 0);
   }
 
   const vaciarCarrito = () => {
     setCarrito([]);
   }
 
+  const eliminarProducto = (producto) => {
+    const productoEncontrado = carrito.find(prod => prod.id === producto.id)
+    const indice = carrito.indexOf(productoEncontrado);
+
+    const nuevoCarrito = [...carrito];
+    nuevoCarrito.splice(indice, 1);
+    setCarrito(nuevoCarrito);
+  }
+
+  const actualizarCantidad = (id, cantidad) => {
+    setCarrito(carrito.map(prod =>
+      prod.id === id
+        ? { ...prod, cantidad }
+        : prod
+    ));
+  };
+
   return (
-    <CartContext.Provider value={{ carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito }}>
+    <CartContext.Provider value={{ carrito, agregarAlCarrito, calcularCantidad, calcularTotal, vaciarCarrito, eliminarProducto, actualizarCantidad }}>
       {children}
     </CartContext.Provider>
   )
