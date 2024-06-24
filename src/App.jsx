@@ -19,24 +19,24 @@ import 'react-toastify/dist/ReactToastify.css';
 function App() {
 
   return (
-      <CartProvider>
+    <CartProvider>
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<ItemListContainer />}/>
-          <Route path="/category/:categoryId" element={<ItemListContainer />}/>
-          <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
-          <Route path="/carrito" element={<Carrito />}/>
-          <Route path="/suma" element={<Suma />}/>
-          <Route path="/finalizar-compra" element={<Checkout/>}/>
-          <Route path="/*" element={<NotFound />}/>
+          <Route path="/" element={<ItemListContainer />} />
+          <Route path="/category/:categoryId" element={<ItemListContainer />} />
+          <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+          <Route path="/carrito" element={<Carrito />} />
+          <Route path="/suma" element={<Suma />} />
+          <Route path="/finalizar-compra" element={<Checkout />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>
       <ToastContainer /> {ToastContainer}
-      </CartProvider>
+    </CartProvider>
 
-      
+
   )
 }
 

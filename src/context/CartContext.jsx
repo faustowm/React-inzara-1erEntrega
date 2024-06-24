@@ -2,6 +2,7 @@ import { createContext, useEffect, useState } from "react";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
@@ -34,7 +35,7 @@ export const CartProvider = ({ children }) => {
       setCarrito([...carrito, { ...producto, cantidad: 1 }]);
       toast.success(`${producto.nombre} Velita agregada!`, {
         position: "top-right",
-        autoClose: 3000,
+        autoClose: 1000,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
