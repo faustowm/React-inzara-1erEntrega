@@ -36,7 +36,7 @@ export const Checkout = () => {
         Swal.fire({
             icon: 'success',
             title: 'Velas compradas con exito!',
-            text: `¡Enhorabuena! Tus velas ya están en camino. El número mágico para seguir tu pedido es: ${doc.id}. Que la luz y el aroma te acompañen siempre, iluminando momentos especiales. 🕯️🌟`,
+            text: `¡Enhorabuena! Tus velas ya están en camino. El número mágico para seguir tu pedido es: ${doc.id}. Que la luz y el aroma te acompañen siempre, ilumido momentos especiales. 🕯️🌟`,
           });
       })
       .catch((error) => {

@@ -4,15 +4,37 @@
     box-sizing: border-box;
 }
 
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #616161;
-    background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
-    background: linear-gradient(to right, #9bc5c3, #616161);
-    padding: 1rem;
-    
+/*Header y Navbar*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #616161;
+  background: -webkit-linear-gradient(to right, #9bc5c3, #616161);
+  background: linear-gradient(to right, #9bc5c3, #616161);
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff; 
+}
+
+.logo-img {
+  width: 100px; 
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff; 
 }
 
 .nav-menu{
@@ -27,6 +49,26 @@
     color: black
 }
 
+/*Boton agregado al carrito*/
+
+.boton-carrito {
+  background-color: #9e11fc;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-carrito:hover {
+  background-color: #e75197;
+}
+
+
+/* Productos */
 .products-container {
     min-height: 30vh;
     display: flex;

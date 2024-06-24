@@ -13,7 +13,7 @@ export const Item = ({ producto }) => {
       <p>${producto.precio}</p>
       <p>{producto.descripcion}</p>
       <Link to={`/item/${producto.id}`}>Mas info</Link>
-      <button onClick={() => agregarAlCarrito(producto)}>Agregar al carrito</button>
+      <button className='boton-carrito' onClick={() => agregarAlCarrito(producto)}>Agregar al carrito</button>
     </div>
   )
 }

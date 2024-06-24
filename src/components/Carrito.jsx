@@ -106,7 +106,7 @@ export const Carrito = () => {
   const handleCantidadChange = (id, cantidad) => {
     actualizarCantidad(id, cantidad);
   };
-
+  
   return (
     <Container>
       {carrito.map((prod) => (

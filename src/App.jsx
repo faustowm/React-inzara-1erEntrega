@@ -11,6 +11,8 @@ import { NotFound } from "./components/NotFound"
 import { CartProvider } from "./context/CartContext";
 import { Suma } from "./components/Suma"
 import { Checkout } from "./components/Checkout"
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -31,6 +33,7 @@ function App() {
         </Routes>
         <Footer />
       </BrowserRouter>
+      <ToastContainer /> {ToastContainer}
       </CartProvider>
 
       
